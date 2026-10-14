@@ -1,0 +1,12 @@
+Android TV Test 0.1.4
+
+VU-style transparent navy player info bar replaces Android MediaController. Poster/logo, title, actual resolution, available codec/FPS metadata, elapsed/remaining time for VOD, current programme/progress for Live TV, local clock/date. Missing metadata is shown as a dash. Weather remains unconfigured.
+
+OK: show info; OK while visible: pause/resume. INFO/MENU: show. Left/right: seek VOD 10 seconds; no live seeking. Back: return to previous screen. Automatically hides after 6.5 seconds during playback.
+
+No stream transport change: HLS retained. RTL picture/audio confirmed by user on 0.1.3; original black-screen channel remains unresolved.
+
+Validation: all Java sources compiled against Android API 35 with Java 8 compatibility; DEX built; APK v2/v3 signature and zipalign verified. Same development signing certificate as 0.1.3. Device layout/control validation still pending.
+
+ZIP SHA256: 8b9bee2ecfc4a0e532391e26ea9d6097ebe9433cc326649440cd46bbb1f2e3e6
+Updater SHA256: 0390212387a7f24bf8b9a72b9f2c287999c3f1792735ffd8a812aad15bfdcdb4
