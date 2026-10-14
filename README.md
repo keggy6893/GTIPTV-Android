@@ -1,4 +1,4 @@
-# GT IPTV Player Pro – Android-Test 0.1.0
+# GT IPTV Player Pro – Android-Test 0.1.1
 
 Dies ist eine eigenständige, geänderte Android-Portierung auf Grundlage der
 hochgeladenen Enigma2-Sicherung von GT IPTV Player Pro 1.3.0. Noch keine
@@ -31,7 +31,10 @@ auf Android ausgeführt. Keine Zugangsdaten aus der VU wurden übernommen.
 Stalker/MAG, TV-Archiv/Catch-up, TMDB-Entdecken, Filmdetail- und Posteransichten,
 Untertitelverwaltung, Downloads, Wetter, Themenwechsel, Listenreihenfolge,
 Jugendschutz und vollständige Player-Funktionsgleichheit sind nicht portiert.
-Die Listen-/Formularansichten sind native Android-Testansichten und noch nicht
+Die Live-TV-Kategorien sind nach dem Receiver-Skin aufgeteilt (acht Zeilen,
+Nummern, Scrollanzeige, Farbtasten und Wetterbereich). Aktualisieren sowie
+Ein-/Ausblenden von Kategorien sind verfügbar; der Wetterbereich enthält
+noch keine Daten. Die übrigen Listen-/Formularansichten sind noch nicht
 optisch 1:1 umgesetzt. Native Android-Medienunterstützung ist vom Gerät und
 Stream abhängig; kein Media3/ExoPlayer, kein eingebautes YouTube-Streaming.
 M3U-Dateiauswahl, M3U-spezifische Headeroptionen und XMLTV sind noch nicht enthalten.
@@ -56,7 +59,7 @@ SDK-Plattformordner mit android.jar wird verwendet (auf deinem PC android-37.0).
 minSdk 26, targetSdk 34; vorgesehen für den lokalen Android-TV-Test, kein Store-Build.
 Jeder Build bekommt ein neues Unterverzeichnis in build/.
 
-APK: output\GTIPTV-Android-0.1.0-tvtest.apk
+APK: output\GTIPTV-Android-0.1.1-tvtest.apk
 
 Zur Installation die **aktuell bestätigte ADB-Adresse inklusive Port** verwenden:
 
