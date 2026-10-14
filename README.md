@@ -1,4 +1,4 @@
-# GT IPTV Player Pro – Android-Test 0.1.1
+# GT IPTV Player Pro – Android-Test 0.1.2
 
 Dies ist eine eigenständige, geänderte Android-Portierung auf Grundlage der
 hochgeladenen Enigma2-Sicherung von GT IPTV Player Pro 1.3.0. Noch keine
@@ -34,7 +34,10 @@ Jugendschutz und vollständige Player-Funktionsgleichheit sind nicht portiert.
 Die Live-TV-Kategorien sind nach dem Receiver-Skin aufgeteilt (acht Zeilen,
 Nummern, Scrollanzeige, Farbtasten und Wetterbereich). Aktualisieren sowie
 Ein-/Ausblenden von Kategorien sind verfügbar; der Wetterbereich enthält
-noch keine Daten. Die übrigen Listen-/Formularansichten sind noch nicht
+noch keine Daten. Die Live-TV-Senderliste hat jetzt die dreispaltige Originalaufteilung mit zehn
+Sendern, Senderlogos, laufender Sendung, EPG-Fortschritt und Folgesendungen.
+Die Daten werden vom Anbieter bezogen und koennen fehlen; der Vorschaubereich
+bleibt schwarz. Die übrigen Listen-/Formularansichten sind noch nicht
 optisch 1:1 umgesetzt. Native Android-Medienunterstützung ist vom Gerät und
 Stream abhängig; kein Media3/ExoPlayer, kein eingebautes YouTube-Streaming.
 M3U-Dateiauswahl, M3U-spezifische Headeroptionen und XMLTV sind noch nicht enthalten.
@@ -59,7 +62,7 @@ SDK-Plattformordner mit android.jar wird verwendet (auf deinem PC android-37.0).
 minSdk 26, targetSdk 34; vorgesehen für den lokalen Android-TV-Test, kein Store-Build.
 Jeder Build bekommt ein neues Unterverzeichnis in build/.
 
-APK: output\GTIPTV-Android-0.1.1-tvtest.apk
+APK: output\GTIPTV-Android-0.1.2-tvtest.apk
 
 Zur Installation die **aktuell bestätigte ADB-Adresse inklusive Port** verwenden:
 
@@ -89,3 +92,9 @@ Entwicklungsschlüssel mit Testkennwort android; nicht für produktive Veröffen
 8. Nicht portierte Menüpunkte zeigen einen klaren Hinweis.
 
 Build-/Signaturprüfung und tatsächliche TV-Laufzeitprüfung sind getrennte Schritte.
+
+## Wiedergabe bewusst zurückgestellt
+
+Die Nutzerin meldete für den TCL bei Live-TV kein Bild und keinen Ton. Auf ihren
+Wunsch wird die Wiedergabe erst nach den Oberflächenarbeiten bearbeitet.
+Version 0.1.2 enthält keine Reparatur des Players.
