@@ -1,4 +1,4 @@
-# GT IPTV Player Pro – Android-Test 0.1.2
+# GT IPTV Player Pro – Android-Test 0.1.3
 
 Dies ist eine eigenständige, geänderte Android-Portierung auf Grundlage der
 hochgeladenen Enigma2-Sicherung von GT IPTV Player Pro 1.3.0. Noch keine
@@ -28,7 +28,7 @@ auf Android ausgeführt. Keine Zugangsdaten aus der VU wurden übernommen.
 
 ## Noch offen
 
-Stalker/MAG, TV-Archiv/Catch-up, TMDB-Entdecken, Filmdetail- und Posteransichten,
+Stalker/MAG, TV-Archiv/Catch-up, TMDB-Entdecken, vollständige Filmdetailansichten,
 Untertitelverwaltung, Downloads, Wetter, Themenwechsel, Listenreihenfolge,
 Jugendschutz und vollständige Player-Funktionsgleichheit sind nicht portiert.
 Die Live-TV-Kategorien sind nach dem Receiver-Skin aufgeteilt (acht Zeilen,
@@ -62,7 +62,7 @@ SDK-Plattformordner mit android.jar wird verwendet (auf deinem PC android-37.0).
 minSdk 26, targetSdk 34; vorgesehen für den lokalen Android-TV-Test, kein Store-Build.
 Jeder Build bekommt ein neues Unterverzeichnis in build/.
 
-APK: output\GTIPTV-Android-0.1.2-tvtest.apk
+APK: output\GTIPTV-Android-0.1.3-tvtest.apk
 
 Zur Installation die **aktuell bestätigte ADB-Adresse inklusive Port** verwenden:
 
@@ -97,4 +97,18 @@ Build-/Signaturprüfung und tatsächliche TV-Laufzeitprüfung sind getrennte Sch
 
 Die Nutzerin meldete für den TCL bei Live-TV kein Bild und keinen Ton. Auf ihren
 Wunsch wird die Wiedergabe erst nach den Oberflächenarbeiten bearbeitet.
-Version 0.1.2 enthält keine Reparatur des Players.
+Version 0.1.3 enthält keine Reparatur des Players.
+
+## Filmansicht in 0.1.3
+
+Cinematic-Aufteilung nach dem Receiver-Screenshot: zwölf Kategorien links,
+Filmhintergrund und Metadaten oben, fünf Poster unten. Kategorienwechsel lädt
+Filme aus der Quelle; Titel, Bewertung, Jahr, Laufzeit, Genre, Beschreibung,
+Regie/Besetzung und Hintergrund kommen aus get_vod_info, sofern vorhanden.
+Favoriten, Titel-Sortierung, Suche innerhalb der Kategorie und Seitenwechsel.
+Die Downloadtaste zeigt ausdrücklich, dass Downloads noch nicht portiert sind.
+Poster/Bildmaterial wird nicht mit Beispielen aufgefüllt. Ohne Metadaten werden
+fehlende Angaben als unbekannt angezeigt. Bilder maximal 4 MiB pro Download;
+SVG- und andere vom Android-Bitmapdecoder nicht unterstützte Formate fehlen.
+Die Filmbeschreibung ist zunächst auf den sichtbaren Ausschnitt begrenzt.
+Die neue Filmansicht ist noch nicht am TCL geprüft. Wiedergabe bleibt offen.
